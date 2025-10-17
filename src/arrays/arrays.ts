@@ -24,5 +24,7 @@ export function filterStringByLength(
   .filter((el) => el.length <= maxLength)
 }
 export function getOnlyTheLowercaseLettersOfTheString(string: string): string {
- return string
+  const lowerCase = /[a-z]/g
+  const onlyLower:string = string.match(lowerCase)!.join('')
+  return onlyLower
 }
