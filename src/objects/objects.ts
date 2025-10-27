@@ -25,7 +25,16 @@ export type User2 = {
  * Event better, your editor can generate all missing fields of the object if you use the right shortcut.
  */
 export function returnObjects(): [User1, User2] {
-  // Write your code here
+ const u1:User1 = {
+  first_name: "toto",
+  last_name: "tutu"
+ }
+
+ const u2:User2 = {
+  first_name: "",
+  last_name:""
+ }
+ return [u1, u2]
 }
 
 /**
