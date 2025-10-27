@@ -37,14 +37,15 @@ export function addTheRequiredTypes(
 }
 
 /**
- * For the next function, we want tou count the number of elements in an array.
+ * For the next function, we want to count the number of elements in an array.
  * The user must give and array as parameter, but the type in the array is not important
  * You can deduce the return type of the function
  */
 export function countElementsInAnArrayOfUnknown(
   array: unknown[],
-) /** Return type ? */ {
+):number {
   // Write your code here
+  return array.length
 }
 
 /**
