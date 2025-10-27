@@ -44,7 +44,6 @@ export function addTheRequiredTypes(
 export function countElementsInAnArrayOfUnknown(
   array: unknown[],
 ):number {
-  // Write your code here
   return array.length
 }
 
@@ -55,6 +54,8 @@ export function countElementsInAnArrayOfUnknown(
  *
  * Complete the types and write the logic
  */
-export function arrayOfStringsToArrayOfStringLength(array: string[]) {
-  // Write your code here
+export function arrayOfStringsToArrayOfStringLength(array: string[]):number[] {
+  const num:number[] = []
+  array.forEach((el) => num.push(el.length))
+  return num
 }
